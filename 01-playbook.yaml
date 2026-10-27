@@ -1,0 +1,20 @@
+- first_name: "praveen kumar"
+  last_name:  "maddu"
+  dob: 13/may/1993
+  addresses:
+  - type: permanent
+    doorno: 1-23
+    village: maddiledu
+    town: srikalahathi
+    city: tirupati
+
+  - type: temparary
+    doorno: 168/82
+    street: kalisam 
+    city: tirupati
+  skills:
+    os: linux
+    ide: vscode
+    cm: ansible
+
+
