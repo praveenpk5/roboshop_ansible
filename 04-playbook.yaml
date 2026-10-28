@@ -4,11 +4,11 @@
   tasks:
     - name: PLAY-1 and Task-1
       debug: 
-      msg: "Hello From PLAY-1 and Task-1"
+        msg: "Hello From PLAY-1 and Task-1"
 
     - name: PLAY-1 and Task-2
       debug:
-      msg: "Hello From PLAY-1 and Task-2"
+        msg: "Hello From PLAY-1 and Task-2"
 
 - name: PLAY-2
   hosts: local
@@ -16,8 +16,8 @@
   tasks:
     - name: PLAY-2 and Task-1
       debug: 
-      msg: "Hello From PLAY-2 and Task-1"
+        msg: "Hello From PLAY-2 and Task-1"
 
     - name: PLAY-2 and Task-2
       debug:
-      msg: "Hello From PLAY-2 and Task-2"
+        msg: "Hello From PLAY-2 and Task-2"
