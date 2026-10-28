@@ -1,6 +1,6 @@
 - name: ansible install
   hosts: frontend
-  became: yes
+  become: yes
   tasks:
     - name: ansible install
       package:
