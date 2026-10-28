@@ -1,0 +1,8 @@
+- name: ansible install
+  hosts: frontend
+  became: yes
+  tasks:
+    - name: ansible install
+      package:
+        name: ansible
+        state: present 
