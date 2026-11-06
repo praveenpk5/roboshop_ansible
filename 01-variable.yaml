@@ -2,9 +2,9 @@
   hosts: lacal
   connection: local
   vars:
-    course: DevOps
-    trainer: Siva
-    duration: 24 hrs
+    course: " DevOps "
+    trainer: " Siva "
+    duration: " 24 hrs "
   tasks: 
     - name: print the vars
       debug:
