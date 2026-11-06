@@ -1,5 +1,5 @@
 - name: demo on debug
-  host: local
+  hosts: local
   connection: local
   tasks:
   - name: print hello world
