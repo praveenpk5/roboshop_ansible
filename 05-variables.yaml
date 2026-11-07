@@ -1,5 +1,5 @@
 - name: variables from inventory file
-  host: local
+  hosts: local
   conecction: local
   vars_files:
     - inventory.ini
