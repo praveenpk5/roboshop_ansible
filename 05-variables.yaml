@@ -1,8 +1,6 @@
 - name: variables from inventory file
   hosts: local
   connection: local
-  vars_files:
-    - inventory.ini
   tasks:
     - name: print the details from inventory file
       debug:
