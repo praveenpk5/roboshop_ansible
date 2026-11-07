@@ -1,7 +1,7 @@
 - name: variables from inventory file
-  hosts: local
-  connection: local
+  hosts: frontend
+  become: true
   tasks:
     - name: print the details from inventory file
       debug:
-        msg: "Hi, I am learning {{ course }} from trainer {{ trainer}} , and the duration is {{ duration }}"
+        msg: "Hi, I am learning {{ course }} from trainer {{ trainer}}, and the duration is {{ duration }}"
