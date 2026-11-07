@@ -9,7 +9,7 @@
       prompt: enter the password  
       private: yes
 
-    tasks:
+  tasks:
     - name: print the confidentiial information
       debug:
         msg: "Hi, I am {{ username }} and my password is {{ password }}"
