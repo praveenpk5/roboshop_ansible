@@ -1,6 +1,6 @@
 - name: variables from inventory file
   hosts: local
-  conecction: local
+  connection: local
   vars_files:
     - inventory.ini
   tasks:
