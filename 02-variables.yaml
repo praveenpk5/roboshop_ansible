@@ -6,7 +6,7 @@
   tasks:
   - name: print the vars
     debug: 
-      mag: "Hi, i got property {{ property }} from my Mother"
+      msg: "Hi, i got property {{ property }} from my Mother"
 
   - name: print the vars again
     vars:
