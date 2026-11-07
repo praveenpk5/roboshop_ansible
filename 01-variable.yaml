@@ -1,5 +1,5 @@
 - name: demo on variables
-  hosts: lacal
+  hosts: local
   connection: local
   vars:
     course: "DevOps"
