@@ -1,0 +1,8 @@
+- name: create user
+  hosts: local
+  connection: local
+  become: yes #sudo access
+  tasks:
+    - name: create roboshop user exist or not
+      command: id roboshop # linux command to check user exist or not, when there is no ansible module exist
+      
