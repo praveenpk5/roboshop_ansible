@@ -1,0 +1,31 @@
+- name: course info
+  hosts: local
+  connection: local
+  vars:
+    course: "DevSecOps"  # string
+    trainer: Siva 
+    duration_in_hours: 180 hrs # numbers
+    is_live_session: true  # boolean
+    topics:
+      - Observability
+      - CI/CD                                 
+      - DevSecOps
+      - Ansible
+      - Docker
+      - Kubernetes
+      - Terraform
+    more_details:
+      months: 4
+      trainer: Siva
+      exact_duration_in_months: 4.5
+  tasks:
+    - name: print the info and  type
+      debug:
+        msg: |   # | for multiple lines
+           Hi, I am learning {{ course }} from trainer {{ trainer }} , and the duration is {{ duration_in_hours }}
+           The type of course is {{ course | type_debug }}
+           The type of trainer is {{ trainer | type_debug }}
+           The type of duration_in_hours is {{ duration_in_hours | type_debug }}
+           The type of is_live_session is {{ is_live_session | type_debug }}
+           The type of topics is {{ topics | type_debug }}
+           The type of more_details is {{ more_details | type_debug }}                                                          
