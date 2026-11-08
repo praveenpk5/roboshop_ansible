@@ -11,3 +11,7 @@
     - name: print the output
       debug:
         msg: "{{ user_output }}" # print the output of the command
+
+    - name: create roboshop user
+      command: useradd roboshop
+      when: user_output.rc !=0 # condition to check the return code of the command, if it is not equal to 0 then create the user
