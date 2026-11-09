@@ -4,7 +4,8 @@
   become: yes
   tasks:
     - name: test the command module
-      command: cat /etc/passwd | grep testuer
+    #command: cat /etc/passwd | grep testuer
+      shell: cat /etc/passwd | grep testuser
       register: testuser_output
 
     - name: print the output of command module
