@@ -1,0 +1,12 @@
+- name: shell vs command
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: test the command module
+      command: cat /etc/passwd | grep testuer
+      register: testuser_output
+
+    - name: print the output of command module
+      debug:
+        msg: "{{ testuser_output }}"
