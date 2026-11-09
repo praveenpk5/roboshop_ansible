@@ -13,7 +13,8 @@
         msg: "{{ testuser_output }}"
 
     - name: get the files
-      command: ls -la > /tmp/files.txt
+    #command: ls -la > /tmp/files.txt
+      shell: ls -la > /tmp/files.txt   # |,> are not supported in command module
       register: files_output
 
     - name: print the files output
